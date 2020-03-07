@@ -53,7 +53,6 @@ def lambda_handler(event, context):
         ans.append(response)
     print(ans)
     
-    #sqs = boto3.resource('dynamodb', 'us-east-1',aws_access_key_id = 'AKIA3JD6H74DB4ANJ4VQ', aws_secret_access_key='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')
     #l = {'id':'0CjK3esfpFcxIopebzjFxA'}
     #table_name=sqs.Table('yelp_restaurants')
     #response = table_name.get_item(Key={'id': '0dDCDQz7DrKkSvu9h2hcQw'})
