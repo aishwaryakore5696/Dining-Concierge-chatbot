@@ -124,25 +124,7 @@ def validate_order_restaurants(location,cusine,drinks, date,street, phone_number
             return build_validation_result(False, 'No_of_people',
                                            'The no of people entered is less than 1 '
                                            'Please enter a number greater than 1')
-    # Tejas
-    # Pick up time not considered currently
-
-    # if pickup_time is not None:
-    #     if len(pickup_time) != 5:
-    #         # Not a valid time; use a prompt defined on the build-time model.
-    #         return build_validation_result(False, 'PickupTime', None)
-    #
-    #     hour, minute = pickup_time.split(':')
-    #     hour = parse_int(hour)
-    #     minute = parse_int(minute)
-    #     if math.isnan(hour) or math.isnan(minute):
-    #         # Not a valid time; use a prompt defined on the build-time model.
-    #         return build_validation_result(False, 'PickupTime', None)
-    #
-    #     if hour < 10 or hour > 16:
-    #         # Outside of business hours
-    #         return build_validation_result(False, 'PickupTime', 'Our business hours are from ten a m. to five p m. Can you specify a time during this range?')
-
+    
     return build_validation_result(True, None, None)
 
 
